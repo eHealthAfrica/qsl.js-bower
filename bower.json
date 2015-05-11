@@ -1,0 +1,24 @@
+{
+  "name": "qsl",
+  "authors": [
+    "Johannes Wilm <http://www.johanneswilm.org>",
+    "Tom Vincent <https://tlvince.com>"
+  ],
+  "description": "QSL parser",
+  "main": "qsl.js",
+  "keywords": [
+    "qsl",
+    "parser",
+    "questionnaire"
+  ],
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/*",
+    "**/.*",
+    "!README.md",
+    "!LICENSE",
+    "!qsl.js",
+    "!qsl.min.js"
+  ],
+  "homepage": "https://github.com/eHealthAfrica/qsl.js"
+}
