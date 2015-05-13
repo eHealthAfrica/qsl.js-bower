@@ -14,8 +14,11 @@ This project is a JavaScript implementation of a QSL parser.
 
 ## Usage
 
-`qsl.js` exposes a single function `parse` the takes a raw QSL document and
-a section name and returns a formatted representation of the given section.
+`qsl.js` exposes `parse` the takes a raw QSL document and returns a
+array-object representation.
+
+`format` takes a parsed document and a section name and returns a formatted
+representation of the given section.
 
 ```yml
 # bands.qsl
@@ -34,7 +37,8 @@ bands:
 'use strict';
 
 var qsl = require('qsl');
-qsl.parse(bandsQSL, 'bands');
+var parsed = qsl.parse(bandsQSL);
+return qsl.format(parsed, 'bands');
 // =>
 // [
 //   {

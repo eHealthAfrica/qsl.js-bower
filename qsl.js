@@ -395,10 +395,8 @@ function uncamelize (string) {
 var parser = require('./lib/parse');
 var formatter = require('./lib/format');
 
-exports.parse = function(rawQSL, section) {
-  var qsl = parser.parse(rawQSL);
-  return formatter.format(qsl, section);
-};
+exports.parse = parser.parse;
+exports.format = formatter.format;
 
 },{"./lib/format":1,"./lib/parse":2}]},{},[7])(7)
 });
